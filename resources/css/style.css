@@ -174,3 +174,24 @@ header {
     margin: 2rem 0;
   }
 }
+
+/* 375px */
+@media only screen and (max-width: 375px) {
+  body {
+    /* background-color: rgb(206, 89, 12) !important; */
+    margin: 0 10px 0 -40px;
+  }
+  * {
+    font-size: 10px !important;
+  }
+  .container {
+    width: 600px;
+    height: 80vh;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 10px 10px 25px 2px #333;
+    animation: fadeIn 4s ease-out;
+  }
+}
