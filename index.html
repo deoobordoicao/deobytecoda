@@ -17,10 +17,43 @@
     <title>Deo Byte Coda</title>
   </head>
   <body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "106417348802608");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v15.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    
     <div class="containers">
       <nav class="nav">
-        <a href="https://www.facebook.com/deobytecoda/?id=%218345114850283" target="_blank" class="logo">Deo Byte Coda</a> 
-        
+        <a href="https://www.facebook.com/deobytecoda/?id=%218345114850283" target="_blank" class="logo">Deo Byte Coda</a>
+
         <ul class="nav-links">
           <li><a href="">Home</a></li>
           <li><a href="">Services</a></li>
@@ -33,7 +66,7 @@
         <i class="fas fa-times"></i>
       </nav>
       <header>
-        <div style="position: relative;"><img src="https://bit.ly/3WaHc1g" alt="" srcset=""></div>
+        <div style="position: relative"><img src="https://bit.ly/3WaHc1g" alt="" srcset="" /></div>
         <h2>Hi,</h2>
         <h2>I'm Deo!</h2>
         <h4>Welcome to Deo Byte Coda Page</h4>
