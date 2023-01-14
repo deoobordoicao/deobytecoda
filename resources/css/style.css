@@ -176,7 +176,7 @@ header {
 }
 
 /* 375px */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 1280px) {
   body {
     /* background-color: rgb(206, 89, 12) !important; */
     margin: 0 10px 0 -40px;
